@@ -1,14 +1,7 @@
-#def show_greeting():
-    #text = 'Hello, world!'
-    #print(text)
+def save_email():
+    email = '  SuppORT@hexlet.IO'
+    trim = email.strip()
+    prop = trim.lower()
+    return prop
 
-##show_greeting()
-##def run():
- ##   return 5
-# #   return 10
-
-
-
-##print(run())
-text = 'EPIC'
-print(f'{text:!>9}')
+print(save_email())

@@ -18,8 +18,19 @@
 ##    return a
 ##print(is_leap_year(2016))
 
-def string_or_not(text):
-    is_string = isinstance(text, str)
-    answer = is_string and 'yes' or 'no'
-    return answer
-print (string_or_not(True))
+#def string_or_not(text):
+#    is_string = isinstance(text, str)
+#    answer = is_string and 'yes' or 'no'
+#    return answer
+#print (string_or_not(True))
+
+nums=range(1,10)
+
+def is_prime(num):
+    for x in range(2,num):
+        if (num%x) == 0:
+            return False
+        return True
+
+primes= list(filter(is_prime, nums))
+print(primes)

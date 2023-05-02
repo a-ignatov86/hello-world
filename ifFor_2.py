@@ -1,12 +1,25 @@
+#from nis import match
+
+
 def normalize_url(url):
     
-    if url[0:8] =='https://' :
-        return url
-    elif url[0:7] == 'http://':
-        return f'https://{url[7:]}'
-    else: 
-        return  f'https://{url}'
+    match url[:7]:
+        case 'https:/' :
+            return url
+        case 'http://' :
+            return f'https://{url[7:]}'
+        case _:
+            return f'https://{url}'
 
 
-    
-print(normalize_url('http://123'))
+def get_number_explanation(number):
+    match number:
+        case 666:
+            return'devil number'
+        case 42:
+            return'answer for everything'
+        case 7:
+            return'prime numberr'
+        case _:
+            return'just a number'
+print(get_number_explanation(0))

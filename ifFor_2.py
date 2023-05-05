@@ -19,7 +19,7 @@ def get_number_explanation(number):
         case 42:
             return'answer for everything'
         case 7:
-            return'prime numberr'
+            return'prime number'
         case _:
             return'just a number'
 print(get_number_explanation(0))

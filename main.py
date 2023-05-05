@@ -3,8 +3,10 @@
 #from computation import PI, E
 #from computation import pi_times
 
-import package
+from package.functions import greet
+from package.constants import PERSON
 
+from random import randint
 #print(PI)
 #print(computation.E)
 #print(pi_times(2))
@@ -14,5 +16,4 @@ import package
 ##print(name)
 ##say_hi("stan")
 
-print(package.NAME)
-
+print(randint(1, 100))

@@ -16,4 +16,13 @@ from random import randint
 ##print(name)
 ##say_hi("stan")
 
-print(randint(1, 100))
+
+def sort_pair(nmbrs):
+#print(randint(1, 100))
+    n_1, n_2 = nmbrs
+    if n_1 > n_2:
+        return n_2, n_1
+    else:
+        return n_1, n_2
+    
+print(sort_pair((5, 12)))

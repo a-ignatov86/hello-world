@@ -9,4 +9,4 @@ def get_hidden_card(card_numbr, count_stars = 4):
     stars="*" * count_stars
     return f'{stars}{hidden_card}'
 
-print(get_hidden_card(1234567890123456,12))
+print(get_hidden_card(1234567890123456))

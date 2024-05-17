@@ -10,8 +10,17 @@
 
 #print(f(7,d=1))
 
-def trim_and_repeat(string='python',offset=0,repetitions=1):
-    slise=string[offset:]
-    result = slise * repetitions
+#def trim_and_repeat(string='python',offset=0,repetitions=1):
+#    slise=string[offset:]
+#    result = slise * repetitions
+#    return result
+#print(trim_and_repeat(offset=3, repetitions=2))
+def sum(numbers):
+    result = 0
+    for num in numbers:
+        result += int(num)
+
     return result
-print(trim_and_repeat(offset=3, repetitions=2))
+
+print(sum("12345"))
+
